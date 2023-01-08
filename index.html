@@ -68,8 +68,40 @@
       <p>Kamila &copy;</p>
     </footer>
     <script>
-      const name = "Kamila \u{1F308}";
-      console.log(name);
+      const myName = "Kamila \u{1F308}";
+      const catsName = "Fibi i Dante";
+
+
+  
+      console.log(`Cześć jestem ${myName} a to są ${catsName}`);
+
+      const catAge = 2;
+
+      console.log(catsName + " mają już " + catAge + " lata");
+
+     
+      let user = prompt("Who's there?", "");
+
+      if(user==="" || user === null){
+        alert("Canceled")
+      } else 
+        if(user==="Admin"){
+        let password=prompt("Password?", "");
+
+        if(password==="TheMaster"){
+          alert("Welcome Boss!")
+        } 
+        else if (password ==="" || password === null)
+        {alert("Canceled")
+        }
+         else 
+        {alert("Wrong!")
+        }
+      } else {alert("I dont' know you")}
+        
+      
+
+  
     </script>
   </body>
 </html>
